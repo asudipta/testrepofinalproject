@@ -77,7 +77,7 @@ def scatter(entered_site, payload):
     else:
         fig = px.scatter(filtered_df[filtered_df['Launch Site'] == entered_site], x='Payload Mass (kg)', y='class',
                         color='Booster Version Category',
-                        title="Success Count on Payload Mass for Site {entered_site}")
+                        title="Success Count on Payload Mass for Site {}".format(entered_site))
         return fig   
          
                                 
